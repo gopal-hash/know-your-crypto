@@ -1,0 +1,145 @@
+body {
+    font-family: 'Inter', sans-serif; /* Modern, geometric font */
+    background-color: #0d0d0d; /* Near-black for a minimalist background */
+    color: #e0e0e0; /* Light gray for text contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px; /* Compact layout for focus */
+    margin: 120px auto;
+    padding: 40px;
+    background-color: transparent; /* No background for floating, minimalist effect */
+    border-radius: 20px;
+    box-shadow: none; /* No shadow to keep it minimal */
+    text-align: left; /* Align text to the left for modern look */
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    color: #f2a900; /* Crypto-style gold accent for a premium feel */
+    font-family: 'Space Mono', monospace; /* Monospace font for futuristic feel */
+    font-size: 2.8em;
+    letter-spacing: 2px; /* Subtle spacing for a modern look */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 50px; /* Fully rounded search box */
+    background-color: #1a1a1a; /* Soft dark background for the input */
+    color: #ffffff; /* White text */
+    font-size: 1.2em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Floating shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+input[type="text"]:focus {
+    transform: translateY(-5px); /* Floating effect */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Enhanced floating shadow on focus */
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #f2a900; /* Gold color for the button */
+    color: #0d0d0d; /* Dark background for contrast */
+    border: none;
+    border-radius: 50px; /* Fully rounded button */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    text-transform: uppercase; /* Modern text style */
+}
+
+button:hover {
+    background-color: #e89a00; /* Darker gold on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.results {
+    background-color: #1a1a1a; /* Dark, card-like background for the result box */
+    color: #f0f0f0; /* Light text */
+    padding: 30px;
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    font-size: 1.1em;
+    line-height: 1.8; /* Spacing for readability */
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.results pre {
+    background-color: #121212; /* Dark background for code blocks */
+    color: #f2a900; /* Crypto-gold text for code */
+    padding: 20px;
+    border-radius: 12px; /* Slightly rounded edges */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'JetBrains Mono', monospace; /* Futuristic, monospace font */
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.results h2 {
+    font-size: 1.8em;
+    color: #f2a900; /* Gold color for headers */
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.results p {
+    margin-bottom: 18px;
+    line-height: 1.8; /* Better spacing for readability */
+    font-size: 1.1em;
+}
+
+.results .crypto-stats {
+    display: flex;
+    justify-content: space-between; /* Spacing for a clean, minimal stat layout */
+    background-color: #0d0d0d;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Floating effect */
+}
+
+.results .crypto-stats div {
+    flex: 1;
+    text-align: center;
+    color: #f2a900; /* Consistent gold accent */
+    font-family: 'Space Mono', monospace; /* Monospace for stats */
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.crypto-chart {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark card background for the chart */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deep shadow for floating effect */
+    text-align: center;
+}
+
+.crypto-chart img {
+    max-width: 100%;
+    border-radius: 12px; /* Rounded edges for the chart */
+}

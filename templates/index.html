@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your crypto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Know your crypto</h1>
+
+        <!-- Form for scraping a single URL -->
+        <form action="/scrape" method="post">
+            <label for="url"></label>
+            <input type="text" id="url" name="url" placeholder="Destination name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Display scraped/crawled results -->
+        {% if result %}
+            <h2>Info of {{ url }}</h2>
+            <div class="results">
+                <pre>{{ result | safe }}</pre>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
